@@ -1,10 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import {useEffect, useState} from "react";
+import UserComponent from "./components/Users";
+import {getUsers} from "./services/userServices";
 
 function App() {
+
+    let [users, setUsers] = useState([]);
+
+    useEffect(()=>{
+getUsers().then(value => setUsers(value));
+    }, []);
+
+
+
+
   return (
-    <div className="App">
-      App
+    <div>
+        {
+            users.map(value => <UserComponent
+                key={value.id}
+                item={value}/>)
+        }
     </div>
   );
 }
