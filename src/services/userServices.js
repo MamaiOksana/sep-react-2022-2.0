@@ -10,4 +10,4 @@ const getUser = (id) => {
 
 }
 
-export {getUser, getUsers}
+export {getUser, getUsers}  
