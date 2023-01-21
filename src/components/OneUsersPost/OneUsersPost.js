@@ -17,4 +17,4 @@ const OneUsersPost = () => {
     );
 };
 
-export {OneUsersPost};
+export default OneUsersPost;
