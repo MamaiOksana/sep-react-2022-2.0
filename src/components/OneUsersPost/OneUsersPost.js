@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
-import {userService} from "../../services/userService";
+import {userService} from "../../services/serviceForUsers/userService";
 import Post from "../Post/Post";
 
 const OneUsersPost = () => {

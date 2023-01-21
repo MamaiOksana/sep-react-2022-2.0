@@ -2,8 +2,8 @@ import React, {useEffect, useState} from 'react';
 
 import Post from "../Post/Post";
 import axios from "axios"
-import {axiosService} from "../../services/axiosService";
-import {userService} from "../../services/userService";
+import {axiosService} from "../../services/serviceForUsers/axiosService";
+import {userService} from "../../services/serviceForUsers/userService";
 
 const Posts = () => {
 
@@ -19,7 +19,7 @@ useEffect(() => {
     return (
         <div>
             <h2>Post info:</h2>
-            {postInfo && <div>
+            {postInfo && <div className={'UserCard'}>
                 <h5>user Id: {postInfo.id}</h5>
                 <h4>title: "{postInfo.title}"</h4>
                 <p><b>body</b>--{postInfo.body}</p>
@@ -27,7 +27,7 @@ useEffect(() => {
 
             <hr/>
 
-            <h2>Post:</h2>
+            <h2 >Post:</h2>
             {posts.map(post => <Post key ={post.id} post={post} setPostInfo={setPostInfo}/>)}
         </div>
     );
