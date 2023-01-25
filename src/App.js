@@ -1,13 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
 import {UserForm, Users} from "./components";
+import {useEffect, useState} from "@types/react";
+import {usersService} from "./services";
 
-function App() {
-  return (
+const App = () => {
+
+    const [users, setUsers] = useState([]);
+
+    useEffect(()=>{
+        usersService.getAll().then(({data})=>setUsers([...data]))
+    }, [])
+
+
+    return (
     <div className="App">
-      <UserForm/>
+      <UserForm setUsers={setUsers}/>
       <hr/>
-      <Users/>
+      <Users users ={users}/>
     </div>
   );
 }
