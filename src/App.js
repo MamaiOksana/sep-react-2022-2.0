@@ -1,10 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import {UserForm, Users} from "./components";
 
 function App() {
   return (
     <div className="App">
-      App
+      <UserForm/>
+      <hr/>
+      <Users/>
     </div>
   );
 }
