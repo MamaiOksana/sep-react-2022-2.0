@@ -9,10 +9,11 @@ const UserForm = ({setUsers}) => {
     const {register, handleSubmit, reset, formState:{errors, isValid}, setValue} = useForm({mode:'all', resolver:joiResolver(userValidator)});
 
     const submit = async (user) => {
+
         const {data} = await usersService.create(user);
         setUsers (prev=>[...prev, data])
         reset()
-
+        console.log(data)
     };
 
     return (
@@ -62,7 +63,7 @@ const UserForm = ({setUsers}) => {
 
         <button disabled={isValid}>Save</button>
     </form>
-    );
+     );
 };
 
 export {UserForm};

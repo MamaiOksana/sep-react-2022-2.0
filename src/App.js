@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {UserForm, Users} from "./components";
-import {useEffect, useState} from "@types/react";
+import {useEffect, useState} from "react";
 import {usersService} from "./services";
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
 
 
     return (
-    <div className="App">
+    <div>
       <UserForm setUsers={setUsers}/>
       <hr/>
       <Users users ={users}/>
