@@ -49,8 +49,6 @@ const UserForm = ({setUsers}) => {
         // </form>
 
     <form onSubmit={handleSubmit(submit)}>
-        <input type="text" placeholder={'id'}{...register('id')}/>
-        {errors.id && <span>{errors.id.message}</span>}
 
         <input type="text" placeholder={'name'}{...register('name')}/>
         {errors.name && <span>{errors.name.message}</span>}
@@ -61,7 +59,7 @@ const UserForm = ({setUsers}) => {
         <input type="text" placeholder={'email'}{...register('email')}/>
         {errors.email && <span>{errors.email.message}</span>}
 
-        <button disabled={isValid}>Save</button>
+        <button disabled={!isValid}>Save</button>
     </form>
      );
 };
