@@ -1,13 +1,13 @@
 import React from 'react';
 
-const NotFoundPage = () => {
+const PostByCommentPage = () => {
     return (
         <div>
-bnmnm
+            Comment Details
         </div>
     );
 };
 
 export {
-    NotFoundPage
+    PostByCommentPage
 }

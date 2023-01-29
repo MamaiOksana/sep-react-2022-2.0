@@ -1,13 +1,13 @@
 import React from 'react';
 
-const PostDetailsPage = () => {
+const CommentsPage = () => {
     return (
         <div>
-
+            Comments Page
         </div>
     );
 };
 
 export {
-    PostDetailsPage
+    CommentsPage
 }
