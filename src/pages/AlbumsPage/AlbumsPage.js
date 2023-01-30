@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {albumsService} from "../../services";
+import {AlbumsList} from "../../components/albumsList/AlbumsList";
+
 
 const AlbumsPage = () => {
 
@@ -10,9 +12,9 @@ const AlbumsPage = () => {
     },[])
 
     return (
-        <div>
+        <div className={'page'}>
             <h2>Albums Page</h2>
-            <AlbumsPage albums={albums}/>
+            <AlbumsList albums={albums}/>
         </div>
     );
 };

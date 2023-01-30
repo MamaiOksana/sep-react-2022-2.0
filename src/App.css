@@ -2,9 +2,9 @@
 
 }
 
-.home{
+.page{
     margin: 0 auto;
-    width: 100%;
+    width: 100vh;
     font-size: 32px;
     background: antiquewhite;
     padding-left: 20%;
@@ -16,4 +16,12 @@
     gap: 10px;
     background: burlywood;
     margin: 0 auto;
+}
+
+.comments{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 500px;
+    overflow-y: scroll;
 }
