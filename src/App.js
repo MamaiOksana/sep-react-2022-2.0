@@ -1,6 +1,7 @@
 import './App.css';
-import {UserForm, Users} from "./components";
 import {useEffect, useState} from "react";
+
+import {UserForm, Users} from "./components";
 import {usersService} from "./services";
 import {Comments} from "./components/Comments/Comments";
 import {CommentForm} from "./components/CommentForm/CommentForm";
