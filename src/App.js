@@ -5,9 +5,6 @@ import {UserForm, Users, Comments, Comment, User, CommentForm} from "./component
 import {commentsService, usersService, axiosService } from "./services";
 
 
-
-
-
 const App = () => {
 
     // const [users, setUsers] = useState([]);
