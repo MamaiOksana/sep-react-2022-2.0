@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Outlet} from "react-router-dom";
 
 import {commentsService} from "../../services"
-import {Comments} from "../../components/comments/Comments";
+import {Comments} from "../../components";
 
 const CommentsPage = () => {
 

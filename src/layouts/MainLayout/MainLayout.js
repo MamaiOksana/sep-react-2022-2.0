@@ -1,7 +1,7 @@
 import React from 'react';
 import {Outlet} from "react-router-dom";
 
-import {SideBar} from "../index";
+import {SideBar} from "../../components";
 import './MainLayout.styles.css'
 
 

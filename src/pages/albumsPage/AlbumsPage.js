@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 
 import {albumsService} from "../../services";
-import {AlbumsList} from "../../components/albumsList/AlbumsList";
+import {AlbumsList} from "../../components";
 
 
 const AlbumsPage = () => {
