@@ -3,8 +3,8 @@ import {useEffect, useState} from "react";
 
 import {UserForm, Users} from "./components";
 import {usersService} from "./services";
-import {Comments} from "./components/Comments/Comments";
-import {CommentForm} from "./components/CommentForm/CommentForm";
+import {Comments} from "./components/comments/Comments";
+import {CommentForm} from "./components/commentForm/CommentForm";
 import {commentsService} from "./services/commentsService";
 
 

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 
 import {usersService} from "../../services";
-import {User} from "../User/User";
+import {User} from "../user/User";
 
 const Users = ({users}) => {
 
