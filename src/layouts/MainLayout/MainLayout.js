@@ -1,7 +1,9 @@
 import React from 'react';
-import {SideBar} from "../../components/SideBar/SideBar";
-import './MainLayout.styles.css'
 import {Outlet} from "react-router-dom";
+
+import {SideBar} from "../index";
+import './MainLayout.styles.css'
+
 
 const MainLayout = () => {
     return (

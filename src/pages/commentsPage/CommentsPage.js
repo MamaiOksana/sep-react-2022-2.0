@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import {commentsService} from "../../services"
 import {Outlet} from "react-router-dom";
+
+import {commentsService} from "../../services"
 import {Comments} from "../../components/comments/Comments";
 
 const CommentsPage = () => {

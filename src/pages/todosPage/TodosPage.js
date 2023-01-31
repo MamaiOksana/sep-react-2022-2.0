@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
+
 import {toDoService} from "../../services";
-import {ToDoList} from "../../components/ToDoList/ToDoList";
+import {ToDoList} from "";
 
 
 const TodosPage = () => {

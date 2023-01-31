@@ -2,11 +2,11 @@ import './App.css';
 import {Route, Routes} from "react-router-dom";
 import {MainLayout} from "./layouts/MainLayout/MainLayout";
 import {RoutesForPage} from "./routes/routes"
-import {HomePage} from "./pages/HomePage/homePage";
-import {TodosPage} from "./pages/TodosPage/TodosPage";
-import {AlbumsPage} from "./pages/AlbumsPage/AlbumsPage";
-import {CommentsPage} from "./pages/CommentsPage/CommentsPage";
-import {PostByCommentPage} from "./pages/PostByCommentPage/PostByCommentPage";
+// import {HomePage} from "./pages/homePage/HomePage";
+// import {TodosPage} from "./pages/todosPage/TodosPage";
+// import {AlbumsPage} from "./pages/albumsPage/AlbumsPage";
+// import {CommentsPage} from "./pages/commentsPage/CommentsPage";
+import {PostByCommentPage, HomePage, TodosPage, AlbumsPage, CommentsPage} from "./pages/index";
 
 function App() {
   return (
