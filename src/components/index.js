@@ -3,4 +3,4 @@ export * from './user/User';
 export * from './userForm/UserForm';
 export * from './comment/Comment';
 export * from './comments/Comments';
-export * from './userForm/UserForm'
+export * from './commentForm/CommentForm';

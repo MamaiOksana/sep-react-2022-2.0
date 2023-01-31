@@ -3,7 +3,7 @@ import {useForm} from "react-hook-form";
 import {joiResolver} from "@hookform/resolvers/joi";
 
 import {commentValidator} from "../../validators/commentValidator";
-import {commentsService} from "../../services/commentsService";
+import {commentsService} from "../../services";
 
 const CommentForm = ({setComments}) => {
 

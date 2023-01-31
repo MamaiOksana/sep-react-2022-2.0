@@ -1,11 +1,10 @@
 import './App.css';
 import {useEffect, useState} from "react";
 
-import {UserForm, Users} from "./components";
-import {usersService} from "./services";
-import {Comments} from "./components/comments/Comments";
-import {CommentForm} from "./components/commentForm/CommentForm";
-import {commentsService} from "./services/commentsService";
+import {UserForm, Users, Comments, Comment, User, CommentForm} from "./components";
+import {commentsService, usersService, axiosService } from "./services";
+
+
 
 
 
