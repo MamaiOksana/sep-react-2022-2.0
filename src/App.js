@@ -13,8 +13,9 @@ function App() {
                      <Route path={RoutesForPage.index}  element={<HomePage/>}/>
                      <Route path={RoutesForPage.todos}  element={<TodosPage/>}/>
                      <Route path={RoutesForPage.albums}  element={<AlbumsPage/>}/>
-                     <Route path={RoutesForPage.comments}  element={<CommentsPage/>}/>
-                        <Route path={RoutesForPage.postById} element={<PostByCommentPage/>}/>
+                     <Route path={RoutesForPage.comments}  element={<CommentsPage/>}>
+                         <Route path={RoutesForPage.postId} element={<PostByCommentPage/>}/>
+                     </Route>
                  </Route>
 
              </Routes>

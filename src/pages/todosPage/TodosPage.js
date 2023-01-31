@@ -12,7 +12,7 @@ const TodosPage = () => {
    },[])
 
     return (
-        <div>
+        <div className={'page'}>
             <h2>Todos page</h2>
             <ToDoList todolist={todolist}/>
         </div>

@@ -4,7 +4,7 @@ const RoutesForPage ={
     todos: 'todos',
     albums: 'albums',
     comments: 'comments',
-    postById:':commentId',
+    postId:':postId',
 }
 
 export {

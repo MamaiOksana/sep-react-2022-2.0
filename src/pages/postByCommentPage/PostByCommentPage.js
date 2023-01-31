@@ -2,7 +2,8 @@ import React, {useEffect, useState} from 'react';
 import {useNavigate, useParams} from "react-router-dom";
 
 import {postService} from "../../services";
-import {urls} from "../../configs";
+import {RoutesForPage} from "../../routes/routes";
+
 
 const PostByCommentPage = () => {
 
@@ -19,11 +20,11 @@ const PostByCommentPage = () => {
     }, [postId])
     if (!post) return null;
     return (
-        <div>
+        <div className={'box'}>
             <div>postID: {postId}</div>
             <div>title: {post.title}</div>
             <div>info: {post.body}</div>
-            <button onClick={() => navigate(`/${urls.comments}`)}>Back</button>
+            <button onClick={() => navigate(`/${RoutesForPage.comments}`)}>{'<'}Back</button>
         </div>
     )
 }

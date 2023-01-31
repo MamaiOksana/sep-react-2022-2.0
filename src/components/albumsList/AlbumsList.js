@@ -5,7 +5,7 @@ const AlbumsList = ({albums=[]}) => {
         <div className={'list'}>
             {albums.map(item =>(
                 <div  key={item.id}>
-                    <div>
+                    <div className={'box'}>
                         <div>UserId: {item.userId}</div>
                         <div>ID: {item.id}</div>
                         <div>Title: {item.title}</div>

@@ -5,7 +5,7 @@ const ToDoList = ({todolist = []}) => {
         <div className={'list'}>
             {todolist.map(item =>(
                 <div  key={item.id}>
-                    <div>
+                    <div className={'box'}>
                         <div>UserId: {item.userId}</div>
                         <div>ID: {item.id}</div>
                         <div>Title: {item.title}</div>

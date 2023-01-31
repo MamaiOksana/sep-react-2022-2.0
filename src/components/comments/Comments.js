@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 const Comments = ({comments = []}) => {
 
@@ -7,12 +7,12 @@ const Comments = ({comments = []}) => {
 
 
     return (
-        <div className={'comments'}>
+        <div className={'list'}>
             {comments.map(item =>{
                 const {id, postId, name} =item;
             return (
                <div key={item.id}>
-                   <div>
+                   <div className={'box'}>
                        <div>id: {id}</div>
                        <div>postId: {postId}</div>
                        <div>name: {name}</div>

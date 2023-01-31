@@ -6,17 +6,18 @@ import {Comments} from "../../components";
 
 const CommentsPage = () => {
 
-    const [commets, setComments] = useState([]);
+    const [comments, setComments] = useState([]);
 
     useEffect(()=>{
         commentsService.getAll().then(({data})=> setComments([...data]))
     },[]);
+   // console.log(comments);
 
     return (
         <div className={'page'}>
            <h2>Comments Page</h2>
             <hr/>
-            <Comments comments={commets}/>
+            <Comments comments={comments}/>
             <hr/>
             <Outlet/>
         </div>
