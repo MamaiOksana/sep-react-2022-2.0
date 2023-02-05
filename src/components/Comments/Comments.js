@@ -1,13 +1,22 @@
 import {Component} from "react";
+import {commentServices} from "../../services";
+import {Comment} from "../Comment/Comment";
 
 class Comments extends Component {
     constructor(props) {
         super(props);
         this.state = {comments:[]}
     }
+
+    componentDidMount() {
+        commentServices.getAll().then(({data}) =>this.setState({comments:[...data]}))
+    }
+
     render() {
         return(
-            <div></div>
+            <div>
+                {this.state.comments.map(comment=><Comment key={comment.id} comment={comment}/>)}
+            </div>
         )
     }
 }
