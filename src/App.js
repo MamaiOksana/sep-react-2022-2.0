@@ -1,10 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import {Comments, Post, Posts} from "./components";
 
 function App() {
   return (
-    <div className="App">
-      App
+    <div>
+        <Posts/>
+        <Comments/>
     </div>
   );
 }
