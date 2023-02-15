@@ -1,3 +1,20 @@
-.App {
-
+.btn1{
+    background: aquamarine;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+.post{
+    background: #abcdec;
+    border: black solid 1px;
+    border-radius: 5px;
+    margin: 5px;
+    padding-left: 10px;
+}
+.body{
+    background: antiquewhite;
+    font-size: 25px;
+    border: black solid 1px;
+    border-radius: 5px;
+    margin: 5px;
+    padding-left: 10px;
 }
