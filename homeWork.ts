@@ -57,7 +57,7 @@ interface IUser {
 
 
 
-function sum(a:number,b:number){
+function sum(a:number,b:number): number {
     return a+b
 }
 function showSum(a:number,b:number):void {
